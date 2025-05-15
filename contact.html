@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Toronto Cupcake</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Dancing+Script:wght@400..700&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+        <!-- Main Header -->
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" class="logo1">
+                <div>  
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">Toronto</span>
+                    <span class="logo-secondary">CUPCAKE</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cupcakes.html" class="nav-link">Cupcakes</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="cart.html" class="nav-link active">Cart</a>
+                </a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav id="mobileNav" class="mobile-nav">
+            <div class="mobile-nav-header">
+                <span class="mobile-logo">Toronto Cupcake</span>
+                <button id="closeMenuBtn" class="close-menu-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cupcakes.html" class="nav-link">Cupcakes</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="cart.html" class="nav-link active">Cart</a>
+                
+                
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Get in touch with our team.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                    <img src="images/location.png" alt="location mark">
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Local Toronto, GTA<br>Canada</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                    <img src="images/phone.png" alt="phone call">
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Local Phone: 647-478-9464<br>Outside North America: +001-647-478-9464 <br>North America: +1-877-334-9468</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                    <img src="images/email.png" alt="email">
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>inquiry@torontocupcake.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                    <img src="images/clock.png" alt="clock hours">
+                    </div>
+                    <h3>Business Hours</h3>
+                    <p>Monday - Saturday: 7am - 10pm<br>Sunday: 7am - 10pm <br>(no pick-ups, deliveries for 2 dozen or more)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Have a question, comment, or special order request? Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" class="form-input" required>
+                            <option value="">Select a subject</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="custom">Custom Order Request</option>
+                            <option value="corporate">Corporate Events</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-input" required></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+<section class="map-section">
+    <div class="container">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <!-- Responsive Google Maps embed -->
+            <div class="responsive-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.2183506388194!2d-79.38764462346777!3d43.66544485215902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cb5e9d9ea7%3A0x9ce6c532fb22ff81!2sToronto%20Cupcake!5e0!3m2!1sen!2sus!4v1713804543359!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+
+            <details class="faq-item">
+                <summary class="faq-question">How far in advance should I place my order?</summary>
+                <div class="faq-answer">
+                    <p>For standard orders, we recommend placing your order at least 48 hours in advance. For custom designs or large orders, please allow 3-5 business days. Rush orders may be accommodated based on availability.</p>
+                </div>
+            </details>
+
+            
+            <details class="faq-item">
+                <summary class="faq-question">Do you offer delivery?</summary>
+                <div class="faq-answer">
+                    <p>Yes, we offer delivery throughout Toronto and the Greater Toronto Area. Delivery fees vary based on location and order size. Please contact us for specific delivery rates to your area.</p>
+                </div>
+            </details>
+
+            
+            <details class="faq-item">
+                <summary class="faq-question">Do you accommodate dietary restrictions?</summary>
+                <div class="faq-answer">
+                    <p>Yes, we offer vegan, gluten-free, and nut-free options. Please specify any dietary requirements when placing your order, and we'll be happy to accommodate your needs.</p>
+                </div>
+            </details>
+
+            
+            <details class="faq-item">
+                <summary class="faq-question">Can I cancel or modify my order?</summary>
+                <div class="faq-answer">
+                    <p>Orders can be modified or cancelled up to 48 hours before the scheduled delivery or pickup time. Please contact us as soon as possible to make any changes to your order.</p>
+                </div>
+            </details>
+
+            
+            <details class="faq-item">
+                <summary class="faq-question">Do you offer custom designs for corporate events?</summary>
+                <div class="faq-answer">
+                    <p>Absolutely! We specialize in corporate branding and can create cupcakes featuring your company logo, colors, or custom designs. Please contact our corporate events team for more information.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-col">
+                    <h3>Toronto Cupcake</h3>
+                    <p>Your go-to destination for the most delicious and freshly baked cupcakes in Toronto and the Greater Toronto Area.</p>
+                    <div class="social-icons">
+                        <li><a href="https://facebook.com" target="_blank" class="icon icon-facebook" aria-label="Visit our Facebook page"></a></li>
+                                <li><a href="https://instagram.com" target="_blank" class="icon icon-instagram" aria-label="Visit our Instagram page"></a></li>
+                                <li><a href="https://X.com" target="_blank" class="icon icon-X" aria-label="Visit our X page"></a></li>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cupcakes.html">Cupcakes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>Toronto, GTA</li>
+                        <li>647-478-9464</li>
+                        <li>inquiry@torontocupcake.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h3>Business Hours</h3>
+                    <ul class="business-hours">
+                        <li>Monday - Saturday: 7am - 10pm</li>
+                        <li>Sunday: 7am - 10pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&copy; 2025 Toronto Cupcake. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

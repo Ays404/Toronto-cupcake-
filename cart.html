@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Toronto Cupcake</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Dancing+Script:wght@400..700&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+               <img src="images/logo.png" class="logo1">
+                <div>  
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">Toronto</span>
+                    <span class="logo-secondary">CUPCAKE</span>
+                </div>
+                <section class="cart-page"></section>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cupcakes.html" class="nav-link">Cupcakes</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link active">Cart</a>
+            </nav>
+
+            <button id="mobileMenuBtn" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <nav id="mobileNav" class="mobile-nav">
+            <div class="mobile-nav-header">
+                <span class="mobile-logo">Toronto Cupcake</span>
+                <button id="closeMenuBtn" class="close-menu-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cupcakes.html" class="nav-link">Cupcakes</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link active">Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cart-page">
+        <div class="container">
+            <h1>Your Shopping Cart</h1>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="images/chocolate-cupcake.jpg" alt="Chocolate Cupcake">
+                    <div class="item-details">
+                        <h3>Chocolate Cupcake</h3>
+                        <p class="item-price">$2.50</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('chocolate', -1)">-</button>
+                            <span class="item-quantity">1</span>
+                            <button onclick="updateQuantity('chocolate', 1)">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item" onclick="removeItem('chocolate')">
+                        <i class="fas fa-trash-alt"></i>
+        <div class="cart-item">
+             <img src="images/vanilla-cupcake.jpg" alt="Vanilla Sunshine Cupcake"> <div class="item-details">
+                <h3>Vanilla Sunshine Cupcake</h3>
+             <p class="item-price">$4.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('vanilla-sunshine',-1)">-</button>
+                <span class="item-quantity">1</span>
+                <button onclick="updateQuantity('vanilla-sunshine',1)">+</button>
+               <button class="remove-item" onclick="removeItem('vanilla-sunshine')">
+            <i class="fas fa-trash-alt"></i>
+        </button>  
+            </div>
+                </div>
+            <div class="cart-summary">
+                <p class="total">Total: <span class="total-price">$2.50</span></p>
+                <button class="btn btn-primary">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-col">
+                    <h3>Toronto Cupcake</h3>
+                    <p>Your go-to destination for the most delicious and freshly baked cupcakes in Toronto and the Greater Toronto Area.</p>
+                    <div class="social-icons">
+                        <li><a href="https://facebook.com" target="_blank" class="icon icon-facebook" aria-label="Visit our Facebook page"></a></li>
+                                <li><a href="https://instagram.com" target="_blank" class="icon icon-instagram" aria-label="Visit our Instagram page"></a></li>
+                                <li><a href="https://X.com" target="_blank" class="icon icon-X" aria-label="Visit our X page"></a></li>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cupcakes.html">Cupcakes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>Toronto, GTA</li>
+                        <li>647-478-9464</li>
+                        <li>inquiry@torontocupcake.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h3>Business Hours</h3>
+                    <ul class="business-hours">
+                        <li>Monday - Saturday: 7am - 10pm</li>
+                        <li>Sunday: 7am - 10pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Toronto Cupcake. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

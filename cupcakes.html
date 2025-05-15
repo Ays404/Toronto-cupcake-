@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cupcakes - Toronto Cupcake</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Dancing+Script:wght@400..700&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+        <!-- Main Header -->
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" class="logo1">
+                <div>  
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">Toronto</span>
+                    <span class="logo-secondary">CUPCAKE</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cupcakes.html" class="nav-link active">Cupcakes</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link active">Cart</a>
+                </a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav id="mobileNav" class="mobile-nav">
+            <div class="mobile-nav-header">
+                <span class="mobile-logo">Toronto Cupcake</span>
+                <button id="closeMenuBtn" class="close-menu-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cupcakes.html" class="nav-link active">Cupcakes</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link active">Cart</a>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Cupcakes</h1>
+            <p>Explore our delicious range of freshly baked cupcakes</p>
+        </div>
+    </section>
+
+    <!-- Cupcake Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="category-tabs" id="categoryTabs">
+                <button class="category-tab active" data-category="all">All Cupcakes</button>
+                <button class="category-tab" data-category="classic">Classic Flavors</button>
+                <button class="category-tab" data-category="seasonal">Seasonal Specials</button>
+                <button class="category-tab" data-category="vegan">Vegan Options</button>
+                <button class="category-tab" data-category="gluten-free">Gluten Free</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Gallery -->
+    <section class="full-gallery">
+        <div class="container">
+            <div class="gallery-filter-grid" id="galleryGrid">
+                <!-- Cupcake 1 -->
+                <div class="gallery-item" data-category="classic">
+                    <img src="images/strawberry-cupcake.jpg" alt="Strawberry Delight Cupcake" class="gallery-img reflect">
+                    <div class="gallery-content">
+                        <h3>Strawberry Delight</h3>
+                        <p>Fresh strawberry cupcake with creamy vanilla frosting.</p>
+                        <div class="product-details">
+                            <span class="price">$4.99</span>
+                            <button class="btn btn-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cupcake 2 -->
+                <div class="gallery-item" data-category="classic">
+                    <img src="images/chocolate-cupcake.jpg" alt="Chocolate Dream Cupcake" class="gallery-img reflect">
+                    <div class="gallery-content">
+                        <h3>Chocolate Dream</h3>
+                        <p>Rich chocolate cupcake with chocolate buttercream frosting.</p>
+                        <div class="product-details">
+                            <span class="price">$4.99</span>
+                            <button class="btn btn-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cupcake 3 -->
+                <div class="gallery-item" data-category="classic">
+                    <img src="images/vanilla-cupcake.jpg" alt="Vanilla Sunshine Cupcake" class="gallery-img reflect">
+                    <div class="gallery-content">
+                        <h3>Vanilla Sunshine</h3>
+                        <p>Classic vanilla cupcake with creamy vanilla buttercream.</p>
+                        <div class="product-details">
+                            <span class="price">$4.99</span>
+                            <button class="btn btn-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cupcake 4 -->
+                <div class="gallery-item" data-category="seasonal">
+                    <img src="images/blueberry-cupcake.jpg" alt="Blueberry Bliss Cupcake" class="gallery-img reflect">
+                    <div class="gallery-content">
+                        <h3>Blueberry Bliss</h3>
+                        <p>Blueberry cupcake with lemon cream cheese frosting.</p>
+                        <div class="product-details">
+                            <span class="price">$4.99</span>
+                            <button class="btn btn-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cupcake 5 -->
+                <div class="gallery-item" data-category="classic">
+                    <img src="images/redvelvet-cupcake.jpg" alt="Red Velvet Cupcake" class="gallery-img reflect">
+                    <div class="gallery-content">
+                        <h3>Red Velvet</h3>
+                        <p>Classic red velvet cupcake with cream cheese frosting.</p>
+                        <div class="product-details">
+                            <span class="price">$4.99</span>
+                            <button class="btn btn-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cupcake 6 -->
+                <div class="gallery-item" data-category="seasonal">
+                    <img src="images/pumpkin-cupcake.jpg" alt="Pumpkin Spice Cupcake" class="gallery-img reflect">
+                    <div class="gallery-content">
+                        <h3>Pumpkin Spice</h3>
+                        <p>Seasonal pumpkin cupcake with cinnamon cream cheese frosting.</p>
+                        <div class="product-details">
+                            <span class="price">$5.49</span>
+                            <button class="btn btn-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cupcake 7 -->
+                <div class="gallery-item" data-category="vegan">
+                    <img src="images/vegan-cupcake.jpg" alt="Vegan Chocolate Cupcake" class="gallery-img reflect">
+                    <div class="gallery-content">
+                        <h3>Vegan Chocolate</h3>
+                        <p>Plant-based chocolate cupcake with vegan chocolate frosting.</p>
+                        <div class="product-details">
+                            <span class="price">$5.99</span>
+                            <button class="btn btn-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cupcake 8 -->
+                <div class="gallery-item" data-category="gluten-free">
+                    <img src="images/vanillagluten-cupcake.jpg" alt="Gluten-Free Vanilla Cupcake" class="gallery-img reflect">
+                    <div class="gallery-content">
+                        <h3>Gluten-Free Vanilla</h3>
+                        <p>Gluten-free vanilla cupcake with vanilla bean frosting.</p>
+                        <div class="product-details">
+                            <span class="price">$5.99</span>
+                            <button class="btn btn-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cupcake Customizer/Builder -->
+
+    <section class="customizer-section" id="cupcakeCustomizer">
+    <div class="container">
+        <h2>Design Your Custom Cupcake</h2>
+        <p class="section-intro">Create your perfect cupcake by selecting from our delicious options</p>
+        
+        <div class="customizer-container">
+            <!-- Cupcake Preview -->
+            <div class="customizer-preview">
+                <div class="preview-container">
+                    <div id="cupcakeTopping" class="cupcake-topping topping-none"></div>
+                    <div id="cupcakeFrosting" class="cupcake-frosting frosting-vanilla"></div>
+                    <div id="cupcakeBase" class="cupcake-base base-vanilla"></div>
+                </div>
+                <div class="total-price">
+                    <span>Total: </span>
+                    <span id="customPrice">$4.99</span>
+                </div>
+                <button class="btn btn-primary" id="addCustomToCart">Add to Cart</button>
+            </div>
+            
+            <!-- Customization Options -->
+            <div class="customizer-options">
+                <!-- Base Options -->
+                <div class="option-group">
+                    <h3>Choose Your Base</h3>
+                    <div class="option-selections">
+                        <div class="custom-option active" data-part="base" data-class="base-vanilla" data-name="Vanilla" data-price="2.99">
+                            <div class="color-sample vanilla-base"></div>
+                            <div class="option-details">
+                                <span class="option-name">Vanilla</span>
+                                <span class="option-price">$2.99</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="base" data-class="base-chocolate" data-name="Chocolate" data-price="2.99">
+                            <div class="color-sample chocolate-base"></div>
+                            <div class="option-details">
+                                <span class="option-name">Chocolate</span>
+                                <span class="option-price">$2.99</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="base" data-class="base-lemon" data-name="Lemon" data-price="3.49">
+                            <div class="color-sample lemon-base"></div>
+                            <div class="option-details">
+                                <span class="option-name">Lemon</span>
+                                <span class="option-price">$3.49</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="base" data-class="base-redvelvet" data-name="Red Velvet" data-price="3.49">
+                            <div class="color-sample redvelvet-base"></div>
+                            <div class="option-details">
+                                <span class="option-name">Red Velvet</span>
+                                <span class="option-price">$3.49</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frosting Options -->
+                <div class="option-group">
+                    <h3>Choose Your Frosting</h3>
+                    <div class="option-selections">
+                        <div class="custom-option active" data-part="frosting" data-class="frosting-vanilla" data-name="Vanilla Buttercream" data-price="1.00">
+                            <div class="color-sample vanilla-frosting"></div>
+                            <div class="option-details">
+                                <span class="option-name">Vanilla Buttercream</span>
+                                <span class="option-price">$1.00</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="frosting" data-class="frosting-strawberry" data-name="Strawberry" data-price="1.50">
+                            <div class="color-sample strawberry-frosting"></div>
+                            <div class="option-details">
+                                <span class="option-name">Strawberry</span>
+                                <span class="option-price">$1.50</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="frosting" data-class="frosting-chocolate" data-name="Chocolate" data-price="1.50">
+                            <div class="color-sample chocolate-frosting"></div>
+                            <div class="option-details">
+                                <span class="option-name">Chocolate</span>
+                                <span class="option-price">$1.50</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="frosting" data-class="frosting-cream" data-name="Cream Cheese" data-price="2.00">
+                            <div class="color-sample cream-frosting"></div>
+                            <div class="option-details">
+                                <span class="option-name">Cream Cheese</span>
+                                <span class="option-price">$2.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Topping Options -->
+                <div class="option-group">
+                    <h3>Choose Your Topping</h3>
+                    <div class="option-selections">
+                        <div class="custom-option active" data-part="topping" data-class="topping-none" data-name="None" data-price="0">
+                            <div class="color-sample none-topping">None</div>
+                            <div class="option-details">
+                                <span class="option-name">None</span>
+                                <span class="option-price">$0.00</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="topping" data-class="topping-sprinkles" data-name="Sprinkles" data-price="0.50">
+                            <div class="color-sample sprinkles-topping"></div>
+                            <div class="option-details">
+                                <span class="option-name">Sprinkles</span>
+                                <span class="option-price">$0.50</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="topping" data-class="topping-chips" data-name="Chocolate Chips" data-price="0.75">
+                            <div class="color-sample choc-chip-topping"></div>
+                            <div class="option-details">
+                                <span class="option-name">Chocolate Chips</span>
+                                <span class="option-price">$0.75</span>
+                            </div>
+                        </div>
+                        <div class="custom-option" data-part="topping" data-class="topping-strawberry" data-name="Strawberry" data-price="1.00">
+                            <div class="color-sample strawberry-topping"></div>
+                            <div class="option-details">
+                                <span class="option-name">Strawberry</span>
+                                <span class="option-price">$1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nutritional Information-->
+
+<section class="nutrition-section">
+    <div class="container">
+        <h2>Nutritional Information</h2>
+        <p class="section-intro">We believe in transparency about what goes into our delicious cupcakes</p>
+        
+        <div class="nutrition-controls">
+            <div class="nutrition-search">
+                <input type="text" id="nutritionSearch" placeholder="Search cupcakes..." class="form-input">
+            </div>
+            <div class="unit-toggle">
+                <span>Units:</span>
+                <div class="toggle-buttons">
+                    <button class="unit-btn active" data-unit="g">Grams</button>
+                    <button class="unit-btn" data-unit="oz">Ounces</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nutrition-items">
+            <!-- Strawberry Delight -->
+            <div class="nutrition-item" data-name="strawberry delight" data-keywords="strawberry,berry,fruit">
+                <div class="nutrition-header">
+                    <div class="nutrition-name-image">
+                        <div class="nutrition-image strawberry-cupcake"></div>
+                        <h3>Strawberry Delight</h3>
+                    </div>
+                    <button class="nutrition-toggle" aria-label="Toggle nutrition facts">
+                        <i class="nutrition-icon">+</i>
+                    </button>
+                </div>
+                
+                <div class="nutrition-details">
+                    <div class="nutrition-facts">
+                        <h4>Nutrition Facts</h4>
+                        <div class="nutrition-fact-row serving">
+                            <span>Serving Size</span>
+                            <span class="value g-value">85g</span>
+                            <span class="value oz-value">3.0oz</span>
+                        </div>
+                        <div class="nutrition-fact-row calories">
+                            <span>Calories</span>
+                            <span>290</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-group">
+                            <div class="nutrition-fact-row fat">
+                                <span>Total Fat</span>
+                                <span class="value g-value">14g</span>
+                                <span class="value oz-value">0.5oz</span>
+                                <span class="percentage">18%</span>
+                            </div>
+                            <div class="nutrition-fact-row sub-item saturated-fat">
+                                <span>Saturated Fat</span>
+                                <span class="value g-value">8g</span>
+                                <span class="value oz-value">0.28oz</span>
+                                <span class="percentage">40%</span>
+                            </div>
+                            <div class="nutrition-fact-row sub-item trans-fat">
+                                <span>Trans Fat</span>
+                                <span class="value g-value">0g</span>
+                                <span class="value oz-value">0oz</span>
+                            </div>
+                        </div>
+                        
+                        <div class="nutrition-fact-row cholesterol">
+                            <span>Cholesterol</span>
+                            <span class="value g-value">55mg</span>
+                            <span class="value oz-value">0.002oz</span>
+                            <span class="percentage">18%</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row sodium">
+                            <span>Sodium</span>
+                            <span class="value g-value">190mg</span>
+                            <span class="value oz-value">0.007oz</span>
+                            <span class="percentage">8%</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row carbs">
+                            <span>Total Carbohydrates</span>
+                            <span class="value g-value">36g</span>
+                            <span class="value oz-value">1.27oz</span>
+                            <span class="percentage">13%</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row sub-item fiber">
+                            <span>Dietary Fiber</span>
+                            <span class="value g-value">0g</span>
+                            <span class="value oz-value">0oz</span>
+                            <span class="percentage">0%</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row sub-item sugars">
+                            <span>Sugars</span>
+                            <span class="value g-value">23g</span>
+                            <span class="value oz-value">0.81oz</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row protein">
+                            <span>Protein</span>
+                            <span class="value g-value">3g</span>
+                            <span class="value oz-value">0.11oz</span>
+                        </div>
+                    </div>
+                    
+                    <div class="nutrition-chart">
+                        <div class="chart-title">Nutrient Breakdown</div>
+                        <div class="pie-chart strawberry-chart">
+                            <div class="pie-segment carbs-segment"></div>
+                            <div class="pie-segment fat-segment"></div>
+                            <div class="pie-segment protein-segment"></div>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <div class="legend-color carbs-color"></div>
+                                <span>Carbs 68%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color fat-color"></div>
+                                <span>Fat 27%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color protein-color"></div>
+                                <span>Protein 5%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chocolate Dream -->
+            <div class="nutrition-item" data-name="chocolate dream" data-keywords="chocolate,cocoa,dark,milk">
+                <div class="nutrition-header">
+                    <div class="nutrition-name-image">
+                        <div class="nutrition-image chocolate-cupcake"></div>
+                        <h3>Chocolate Dream</h3>
+                    </div>
+                    <button class="nutrition-toggle" aria-label="Toggle nutrition facts">
+                        <i class="nutrition-icon">+</i>
+                    </button>
+                </div>
+                
+                <div class="nutrition-details">
+                    <div class="nutrition-facts">
+                        <h4>Nutrition Facts</h4>
+                        <div class="nutrition-fact-row serving">
+                            <span>Serving Size</span>
+                            <span class="value g-value">90g</span>
+                            <span class="value oz-value">3.2oz</span>
+                        </div>
+                        <div class="nutrition-fact-row calories">
+                            <span>Calories</span>
+                            <span>320</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-group">
+                            <div class="nutrition-fact-row fat">
+                                <span>Total Fat</span>
+                                <span class="value g-value">16g</span>
+                                <span class="value oz-value">0.56oz</span>
+                                <span class="percentage">21%</span>
+                            </div>
+                            <div class="nutrition-fact-row sub-item saturated-fat">
+                                <span>Saturated Fat</span>
+                                <span class="value g-value">9g</span>
+                                <span class="value oz-value">0.32oz</span>
+                                <span class="percentage">45%</span>
+                            </div>
+                            <div class="nutrition-fact-row sub-item trans-fat">
+                                <span>Trans Fat</span>
+                                <span class="value g-value">0g</span>
+                                <span class="value oz-value">0oz</span>
+                            </div>
+                        </div>
+                        
+                        <div class="nutrition-fact-row cholesterol">
+                            <span>Cholesterol</span>
+                            <span class="value g-value">60mg</span>
+                            <span class="value oz-value">0.002oz</span>
+                            <span class="percentage">20%</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row sodium">
+                            <span>Sodium</span>
+                            <span class="value g-value">210mg</span>
+                            <span class="value oz-value">0.007oz</span>
+                            <span class="percentage">9%</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row carbs">
+                            <span>Total Carbohydrates</span>
+                            <span class="value g-value">40g</span>
+                            <span class="value oz-value">1.41oz</span>
+                            <span class="percentage">15%</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row sub-item fiber">
+                            <span>Dietary Fiber</span>
+                            <span class="value g-value">2g</span>
+                            <span class="value oz-value">0.07oz</span>
+                            <span class="percentage">7%</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row sub-item sugars">
+                            <span>Sugars</span>
+                            <span class="value g-value">26g</span>
+                            <span class="value oz-value">0.92oz</span>
+                        </div>
+                        
+                        <div class="nutrition-fact-row protein">
+                            <span>Protein</span>
+                            <span class="value g-value">4g</span>
+                            <span class="value oz-value">0.14oz</span>
+                        </div>
+                    </div>
+                    
+                    <div class="nutrition-chart">
+                        <div class="chart-title">Nutrient Breakdown</div>
+                        <div class="pie-chart chocolate-chart">
+                            <div class="pie-segment carbs-segment"></div>
+                            <div class="pie-segment fat-segment"></div>
+                            <div class="pie-segment protein-segment"></div>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <div class="legend-color carbs-color"></div>
+                                <span>Carbs 67%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color fat-color"></div>
+                                <span>Fat 26%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color protein-color"></div>
+                                <span>Protein 7%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No results message -->
+            <div id="noNutritionResults" class="no-results">
+                <p>No cupcakes match your search. Try another keyword!</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Custom Orders -->
+    <section class="custom-orders">
+        <div class="container">
+            <div class="custom-content">
+                <div class="custom-text">
+                    <h2>Custom Cupcake Orders</h2>
+                    <p>Need something special for your event? We offer custom cupcake designs tailored to your specific requirements. From corporate logos to wedding themes, we can create cupcakes that perfectly match your vision.</p>
+                    <a href="contact.html" class="btn btn-primary">Request Custom Order</a>
+                </div>
+                <div class="custom-image">
+                    <img src="images/customcupcakes.jpg" alt="Custom Cupcake Designs">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Ordering Info -->
+    <section class="bulk-ordering">
+        <div class="container">
+            <h2>Bulk Ordering Information</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Corporate Events</h3>
+                    <p>Minimum order of 24 cupcakes. Custom logo options available. Delivery to office buildings across the GTA.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Weddings</h3>
+                    <p>Cupcake towers and custom flavor selections. Free tasting session available for orders over 100 cupcakes.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Birthdays & Parties</h3>
+                    <p>Theme-based designs and personalized messages. Special pricing for orders over 48 cupcakes.</p>
+                </div>
+            </div>
+            <div class="bulk-cta">
+                <p>For bulk orders or special requests, please contact our team:</p>
+                <a href="tel:647-478-9464" class="btn btn-outline">Call 647-478-9464</a>
+                <a href="inquiry@torontocupcake.com" class="btn btn-outline">Email Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-col">
+                    <h3>Toronto Cupcake</h3>
+                    <p>Your go-to destination for the most delicious and freshly baked cupcakes in Toronto and the Greater Toronto Area.</p>
+                    <div class="social-icons">
+                        <li><a href="https://facebook.com" target="_blank" class="icon icon-facebook" aria-label="Visit our Facebook page"></a></li>
+                                <li><a href="https://instagram.com" target="_blank" class="icon icon-instagram" aria-label="Visit our Instagram page"></a></li>
+                                <li><a href="https://X.com" target="_blank" class="icon icon-X" aria-label="Visit our X page"></a></li>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cupcakes.html">Cupcakes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>Toronto, GTA</li>
+                        <li>647-478-9464</li>
+                        <li>inquiry@torontocupcake.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h3>Business Hours</h3>
+                    <ul class="business-hours">
+                        <li>Monday - Saturday: 7am - 10pm</li>
+                        <li>Sunday: 7am - 10pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&copy; 2025 Toronto Cupcake. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-container">
+            <img id="lightboxImage" class="lightbox-img" src="" alt="Lightbox image">
+            <button id="closeLightbox" class="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
